@@ -20,7 +20,7 @@ The app also allows you to set an elevated state for an admin user to delete pos
 
 ![](/screenshots/vid1.gif "Challenges")
 ![](/screenshots/vid2.gif "Feed / Timeline")
-![](/screenshots/capture1.png "Profile")
+<img src="/screenshots/capture1.png" width="100">
 
 ## Usage
 
