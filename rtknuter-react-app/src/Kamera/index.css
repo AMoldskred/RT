@@ -1,0 +1,75 @@
+#container-circles{
+    position:fixed;
+    left:50%;
+    bottom:90px;
+    z-index:12 !important;
+
+}
+#container-circles:hover  #inner-circle{
+    transform: scale(1.3);
+}
+#outer-circle{
+    left:-37px;
+    height:75px;
+    width:75px;
+    background-color:hsla(0,0%,100%,.4);
+    z-index:1;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+}
+#inner-circle,#outer-circle{
+    position:absolute;
+    border-radius:50%
+}
+#inner-circle{
+    transition: all .3s cubic-bezier(.7,.34,.52,.98);
+
+    height:60px;
+    width:60px;
+    background:linear-gradient(60deg, #f55a4e, #f32c1e);
+    z-index:2
+}
+#inner-circle.is-clicked{
+    transform: scale(0.3);
+}
+#white-flash.normal{
+    position:absolute;
+    height:100%;
+    width:100%;
+    opacity:1;
+    -webkit-transition:opacity .9s ease-out;
+    -o-transition:opacity .9s ease-out;
+    transition:opacity .9s ease-out
+}
+#white-flash.do-transition{
+    opacity:0;
+    background:#fff
+}
+#display-error{
+    color:#000;
+    background-color:#fff
+}
+.react-html5-camera-photo{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align:center;
+    display: flex;
+
+}
+.react-html5-camera-photo>img{
+    display:none !important;
+}
+.react-html5-camera-photo>video{
+    height:100% !important;
+    width:100% !important;
+    object-fit: cover;
+}
+.react-html5-camera-photo>.display-error{
+    width:768px;
+    margin:0 auto
+}
+

@@ -1,0 +1,24 @@
+* {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    text-rendering: optimizeLegibility;
+    -webkit-overflow-scrolling: touch;
+}
+body,html, #root {
+    overflow-x: hidden;
+    margin:0;
+    padding:0;
+    height:100%;
+    width:100%;
+    display:flex;
+}
+@keyframes blur{
+    0%, 100%  { filter: blur(0px) }
+    50% { filter: blur(3px)}
+}
+.loading{
+    padding-bottom:100%;
+    animation:blur 2s ease infinite;
+}
+.imgLoad{
+    animation:blur 2s ease infinite;
+}
