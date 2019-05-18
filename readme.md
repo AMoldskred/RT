@@ -31,6 +31,7 @@ The app also allows you to set an elevated state for an admin user to delete pos
 - Launch the node server by navigating to the root folder and entering: `npm start`
 - Browse to `http://localhost:8000`
 - Find `config.js` in the root folder and set your own details
+- Start your mongoDB server
 
 ### Development Usage
 
